@@ -39,3 +39,7 @@ Show exact files touched and a short verification plan.
 ```text
 create promps.md for keep prompt command on this ide
 ```
+
+```text
+Build a mobile web static page To-Do application using JavaScript, adhering to clean code engineering principles and maintainable architecture.
+```
