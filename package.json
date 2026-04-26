@@ -1,0 +1,17 @@
+{
+  "name": "ai_product2",
+  "version": "1.0.0",
+  "description": "Simple mobile-first todo app.",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
