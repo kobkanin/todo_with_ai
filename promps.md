@@ -1,41 +1,5 @@
 # Promps for IDE
 
-This file stores reusable prompts for working in this IDE.
-
-## Keep Prompt (session memory style)
-
-Use this when you want the assistant to keep following stable rules during the whole session.
-
-```text
-Keep this prompt for the rest of this session:
-- Be concise and practical.
-- Before editing, explain what you will change.
-- Make small, safe changes.
-- After changes, summarize files edited and why.
-- If requirements are unclear, ask one short clarifying question.
-```
-
-## Quick Coding Prompt
-
-```text
-Implement the requested change directly in code.
-Run relevant checks if available.
-Then report:
-1) what changed,
-2) why it changed,
-3) how to verify.
-```
-
-## Bugfix Prompt
-
-```text
-Find root cause first, then apply the smallest reliable fix.
-Avoid unrelated refactors.
-Show exact files touched and a short verification plan.
-```
-
-## Prompts AI
-
 ```text
 create promps.md for keep prompt command on this ide
 ```
