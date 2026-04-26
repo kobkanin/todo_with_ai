@@ -37,5 +37,5 @@ Show exact files touched and a short verification plan.
 ## Prompts AI
 
 ```text
-I’ll create a new promps.md in your workspace with a practical “keep prompt” template you can reuse in this IDE. I’m checking whether the file already exists first, then I’ll add it.
+create promps.md for keep prompt command on this ide
 ```
