@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile To-Do</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="To-Do application">
+      <header class="app__header">
+        <h1 class="app__title">To-Do</h1>
+        <p class="app__subtitle">Simple tasks. Clear day.</p>
+      </header>
+
+      <section class="card" aria-label="Create task">
+        <form id="todo-form" class="todo-form" novalidate>
+          <label class="sr-only" for="todo-input">Task title</label>
+          <input
+            id="todo-input"
+            name="todo"
+            class="todo-form__input"
+            type="text"
+            maxlength="120"
+            placeholder="Add a task..."
+            autocomplete="off"
+            required
+          />
+          <button class="todo-form__button" type="submit">Add</button>
+        </form>
+        <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+      </section>
+
+      <section class="card" aria-label="Task controls and list">
+        <div class="toolbar" aria-label="Filter tasks">
+          <button class="toolbar__button is-active" data-filter="all" type="button">All</button>
+          <button class="toolbar__button" data-filter="active" type="button">Active</button>
+          <button class="toolbar__button" data-filter="completed" type="button">Completed</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+        <footer class="list-footer">
+          <span id="items-left" class="list-footer__count">0 items left</span>
+          <button id="clear-completed" class="list-footer__clear" type="button">Clear completed</button>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
